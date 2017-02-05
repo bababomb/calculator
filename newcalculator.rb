@@ -1,3 +1,6 @@
+#code that can use everytime want to make sure that
+#typed a number and not a letter
+
 def check_if_letter(number)
   while number =~ /[a-z]/ || number =~ /[A-Z]/
     puts "numbers only please"
@@ -7,7 +10,7 @@ def check_if_letter(number)
   return number
 end
 
-
+#Makes sure that it will go on forever
 while true
   puts "This is a calculator"
 
