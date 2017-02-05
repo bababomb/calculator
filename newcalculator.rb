@@ -2,7 +2,7 @@
 #typed a number and not a letter
 
 def check_if_letter(number)
-  while number =~ /[a-z]/ || number =~ /[A-Z]/
+  while number =~ /[a-z]/
     puts "numbers only please"
     number = gets.chomp
   end
@@ -15,11 +15,11 @@ while true
   puts "This is a calculator"
 
   puts "What is the first number you wish to input?"
-  first_number = gets.chomp
+  first_number = gets.chomp.downcase
   first_number = check_if_letter(first_number)
 
   puts "What is the second number you wish to input?"
-  second_number = gets.chomp
+  second_number = gets.chomp.downcase
   second_number = check_if_letter(second_number)
 
   puts "okay so I have these two numbers. What do you want me to do with them?
@@ -40,7 +40,3 @@ while true
     input = gets.chomp
   end
 end
-#variable.is_a?(String)  ==>
-#variable.is_a?(Fixnum) is an interger
-#this is a thing I want to remember
-#puts first_number.class
